@@ -1,4 +1,3 @@
-/* Estilos generales */
 * {
   margin: 0;
   padding: 0;
@@ -13,4 +12,57 @@ body {
   min-height: 100vh;
   background-color: #000000;
   color: #9ad79b;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000000;
+  padding: 20px;
+  border-bottom: 1px dotted #9ad79b;
+  z-index: 1000;
+}
+
+main {
+  padding: 80px 20px 20px; /* Espacio para el header fijo */
+  border-bottom: 1px dotted #9ad79b;
+  position: relative;
+  overflow: hidden;
+  border-top: 1px dotted #9ad79b;
+}
+
+.content {
+  width: 70%;
+  float: left;
+}
+
+.sidebar {
+  width: 25%;
+  float: right;
+  border: 1px dotted #9ad79b;
+  padding: 10px;
+  margin-top: 20px; /* Espacio debajo del header */
+}
+
+.features {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px dotted #9ad79b;
+  margin-bottom: 20px;
+  clear: both; /* Asegura que esté debajo de los elementos flotantes */
+}
+
+.feature {
+  margin: 10px 0;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  border-top: 1px dotted #9ad79b;
+  border-bottom: 1px dotted #9ad79b;
 }
